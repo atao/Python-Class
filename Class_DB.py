@@ -43,5 +43,5 @@ class database:
             conn.rollback()
             raise e
         finally:
-            print('Last id insert : %d' % id)
+            print(f"[+] Last id {id} - {data}")
             conn.close()
